@@ -130,27 +130,36 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 1:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
                                       TextSpan(
                                           text: " Preliminary",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
                                     topLeft: Radius.circular(5),
                                     bottomLeft: Radius.circular(5),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -177,7 +186,7 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 2:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
@@ -185,20 +194,29 @@ class _RulePageState extends State<RulePage> {
                                           text:
                                               " Dzongkhag Tshogdu and Gewog Tshogde",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
                                     topLeft: Radius.circular(5),
                                     bottomLeft: Radius.circular(5),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -225,27 +243,36 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 3:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
                                       TextSpan(
                                           text: " Seal and Issuance of Order",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
                                     topLeft: Radius.circular(5),
                                     bottomLeft: Radius.circular(5),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -272,7 +299,7 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 4:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
@@ -280,20 +307,29 @@ class _RulePageState extends State<RulePage> {
                                           text:
                                               " Chairperson and Deputy Chairperson",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
                                     topLeft: Radius.circular(5),
                                     bottomLeft: Radius.circular(5),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -320,27 +356,36 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 5:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
                                       TextSpan(
                                           text: " Election Procedure",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
                                     topLeft: Radius.circular(5),
                                     bottomLeft: Radius.circular(5),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -367,7 +412,7 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 6:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
@@ -375,20 +420,29 @@ class _RulePageState extends State<RulePage> {
                                           text:
                                               " Oath or Affirmation of Office",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
                                     topLeft: Radius.circular(5),
                                     bottomLeft: Radius.circular(5),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -415,27 +469,35 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 7:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
                                       TextSpan(
                                           text: " Notification and Agenda",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
-                                              fontSize: 16,
+                                              color: Color(0xffe8a348),
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
                                     topLeft: Radius.circular(5),
                                     bottomLeft: Radius.circular(5),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -462,27 +524,36 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 8:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
                                       TextSpan(
                                           text: " Session",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
                                     topLeft: Radius.circular(5),
                                     bottomLeft: Radius.circular(5),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -509,27 +580,36 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 9:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
                                       TextSpan(
                                           text: " Conduct of Business",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
                                     topLeft: Radius.circular(5),
                                     bottomLeft: Radius.circular(5),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -556,27 +636,36 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 10:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
                                       TextSpan(
                                           text: " Voting",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
                                     topLeft: Radius.circular(5),
                                     bottomLeft: Radius.circular(5),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -603,27 +692,36 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 11:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
                                       TextSpan(
                                           text: " Minute",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
                                     topLeft: Radius.circular(5),
                                     bottomLeft: Radius.circular(5),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -650,21 +748,21 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 12:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
                                       TextSpan(
                                           text: " Zomdu",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
@@ -697,27 +795,36 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 13:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
                                       TextSpan(
                                           text: " Financial Power",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
                                     topLeft: Radius.circular(5),
                                     bottomLeft: Radius.circular(5),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -744,7 +851,7 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 14:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
@@ -752,20 +859,29 @@ class _RulePageState extends State<RulePage> {
                                           text:
                                               " Leave of Absence, Resignation and Removal",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
                                     topLeft: Radius.circular(5),
                                     bottomLeft: Radius.circular(5),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -792,27 +908,36 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 15:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
                                       TextSpan(
                                           text: " Committee",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
                                     topLeft: Radius.circular(5),
                                     bottomLeft: Radius.circular(5),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -839,21 +964,21 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 16:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
                                       TextSpan(
                                           text: " Plans and Budget",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
@@ -886,27 +1011,36 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 17:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
                                       TextSpan(
                                           text: " Monitoring and Evaluation",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
                                     topLeft: Radius.circular(5),
                                     bottomLeft: Radius.circular(5),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -933,7 +1067,7 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 16:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
@@ -941,20 +1075,29 @@ class _RulePageState extends State<RulePage> {
                                           text:
                                               " Powers and Functions of Member",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
                                     topLeft: Radius.circular(5),
                                     bottomLeft: Radius.circular(5),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -981,27 +1124,36 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 19:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
                                       TextSpan(
                                           text: " Dzongdag",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
                                     topLeft: Radius.circular(5),
                                     bottomLeft: Radius.circular(5),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -1028,27 +1180,36 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "2Chapter 20:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
                                       TextSpan(
                                           text: " Dzongrab",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
                                     topLeft: Radius.circular(5),
                                     bottomLeft: Radius.circular(5),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -1075,27 +1236,36 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 21:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
                                       TextSpan(
                                           text: " Dungpa",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
                                     topLeft: Radius.circular(5),
                                     bottomLeft: Radius.circular(5),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -1122,21 +1292,21 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 22:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
                                       TextSpan(
                                           text: " Gewog Administrative Officer",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
@@ -1169,27 +1339,36 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 23:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
                                       TextSpan(
                                           text: " Tshogdrung",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
                                     topLeft: Radius.circular(5),
                                     bottomLeft: Radius.circular(5),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -1216,7 +1395,7 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 24:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
@@ -1224,20 +1403,29 @@ class _RulePageState extends State<RulePage> {
                                           text:
                                               " Gewog Accountant, Gaydrung and Chipon",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
                                     topLeft: Radius.circular(5),
                                     bottomLeft: Radius.circular(5),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -1264,7 +1452,7 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 25:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
@@ -1272,20 +1460,29 @@ class _RulePageState extends State<RulePage> {
                                           text:
                                               " Functions of Dzongkhag Tshogdu and Gewog Tshogde",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
                                     topLeft: Radius.circular(5),
                                     bottomLeft: Radius.circular(5),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -1312,27 +1509,36 @@ class _RulePageState extends State<RulePage> {
                                       TextSpan(
                                           text: "Chapter 26:",
                                           style: TextStyle(
-                                            color: Color(0xff486958),
+                                            color: Colors.white,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w400,
                                           )),
                                       TextSpan(
                                           text: " Miscellaneous",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(5),
                                     bottomRight: Radius.circular(5),
                                     topLeft: Radius.circular(5),
                                     bottomLeft: Radius.circular(5),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),

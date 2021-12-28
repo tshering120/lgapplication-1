@@ -5,6 +5,8 @@ import 'dart:typed_data';
 import 'package:lgapplication/widgets/drawerdzo.dart';
 import 'package:audioplayers/audioplayers.dart';
 
+import '../sizers_helpers.dart';
+
 class DzongkhaPage extends StatefulWidget {
   const DzongkhaPage({Key? key}) : super(key: key);
 
@@ -96,7 +98,7 @@ class _DzongkhaPageState extends State<DzongkhaPage> {
         Padding(
           padding: const EdgeInsets.symmetric(
             vertical: 0.0,
-            horizontal: 2.0,
+            horizontal: 0.0,
           ),
           child: Image.asset(
             "assets/images/2ndpage.jpg",
@@ -114,7 +116,7 @@ class _DzongkhaPageState extends State<DzongkhaPage> {
                   pinned: true,
                   floating: true,
                   delegate: CustomSliverDelegate(
-                    expandedHeight: 95,
+                    expandedHeight: displayHeight(context) * 0.099,
                   ),
                 ),
                 SliverFillRemaining(
@@ -123,23 +125,19 @@ class _DzongkhaPageState extends State<DzongkhaPage> {
                       key: _myformkey,
                       child: Column(
                         children: [
-                          Padding(
-                            padding: const EdgeInsets.symmetric(
-                              vertical: 0.0,
-                              horizontal: 25.0,
-                            ),
+                          Container(
+                            width: displayWidth(context) * 0.9,
                             child: Text(
                               "དེ་ཡང་ འབྲུག་གི་རྩ་ཁྲིམས་ཆེན་མོ་གིས་ དབང་ཚད་དང་དབང་འཛིན་ཕྱིར་སྤེལ་ཐོག་ལས་ མི་ སེར་ཁོང་རའི་ མི་སྡེ་དང་ དཔལ་འབྱོར་ དེ་ལས་ མཐའ་འཁོར་གྱི་ཕན་བདེ་གོང་འཕེལ་དང་  འཛིན་སྐྱོང་ནང་ཐད་ཀར་གྲལ་གཏོགས་འབད་ནིའི་དབང་ཆ་སྤྲོད་དེ་ཡོདཔ་བཞིན་དུ། " +
                                   '\n\n'
                                       "ས་གནས་ཀྱི་གཞུང་དེ་ཚུ་ ས་གནས་ཀྱི་མི་སྡེ་ཚུའི་མཐའ་དོན་གྲུབ་ནི་དང་ ཁོང་གི་རེ་འདོད་དང་ དགོས་མཁོ་གྲུབ་ནི་གི་དོན་ལུ་སྤྱི་འཐུས་སྦེ་བཙག་འཐུ་གྲུབ་པའི་འདུས་ཚོགས་ཅིག་ཨིནམ་ལས་ བརྟེན། " +
                                   '\n\n'
-                                      "འབྲུག་གི་སྤྱི་ཚོགས་ཀྱིས་གཤམ་གསལ་ལྟར་ ཆ་འཇོག་མཛད་གྲུབ། "
-                                      '\n\n',
+                                      "འབྲུག་གི་སྤྱི་ཚོགས་ཀྱིས་གཤམ་གསལ་ལྟར་ ཆ་འཇོག་མཛད་གྲུབ། ",
                               style: TextStyle(
-                                fontSize: 16,
-                                height: 1.6,
+                                fontSize: displayWidth(context) * 0.055,
+                                height: 1.4,
                                 color: Colors.white,
-                                fontWeight: FontWeight.w500,
+                                fontWeight: FontWeight.w200,
                               ),
                             ),
                           ),
@@ -173,21 +171,20 @@ class _DzongkhaPageState extends State<DzongkhaPage> {
                             icon: Icon(
                               isplaying ? Icons.volume_up : Icons.volume_down,
                               color: Colors.white,
-                              size: 35.0,
+                              size: displayWidth(context) * 0.066,
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.symmetric(
-                              vertical: 18.0,
-                              horizontal: 24.0,
-                            ),
+                          SizedBox(
+                            height: displayHeight(context) * 0.06,
                           ),
                           InkWell(
                             onTap: () => moveToLaw(context),
                             child: AnimatedContainer(
                               duration: Duration(seconds: 1),
-                              width: changeButton ? 150 : 300,
-                              height: 37,
+                              width: changeButton
+                                  ? displayWidth(context) * 0.5
+                                  : displayWidth(context) * 0.7,
+                              height: displayHeight(context) * 0.05,
                               alignment: Alignment.center,
                               child: changeButton
                                   ? Icon(
@@ -199,24 +196,36 @@ class _DzongkhaPageState extends State<DzongkhaPage> {
                                       style: TextStyle(
                                         color: Color.fromARGB(255, 0, 0, 0),
                                         fontWeight: FontWeight.w500,
-                                        fontSize: 18,
+                                        fontSize: displayWidth(context) * 0.05,
                                       ),
                                     ),
                               decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 255, 255),
-                                  borderRadius: BorderRadius.circular(
-                                      changeButton ? 150 : 5)),
+                                color: Color.fromARGB(255, 255, 255, 255),
+                                borderRadius: BorderRadius.circular(
+                                    changeButton ? 150 : 5),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.5),
+                                    spreadRadius: 5,
+                                    blurRadius: 7,
+                                    offset: Offset(
+                                        0, 3), // changes position of shadow
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                           SizedBox(
-                            height: 10.0,
+                            height: displayHeight(context) * 0.015,
                           ),
                           InkWell(
                             onTap: () => moveToRule(context),
                             child: AnimatedContainer(
                               duration: Duration(seconds: 1),
-                              width: changetwoButton ? 150 : 300,
-                              height: 37,
+                              width: changetwoButton
+                                  ? displayWidth(context) * 0.5
+                                  : displayWidth(context) * 0.7,
+                              height: displayHeight(context) * 0.05,
                               alignment: Alignment.center,
                               child: changetwoButton
                                   ? Icon(
@@ -228,13 +237,23 @@ class _DzongkhaPageState extends State<DzongkhaPage> {
                                       style: TextStyle(
                                         color: Color.fromARGB(255, 0, 0, 0),
                                         fontWeight: FontWeight.w500,
-                                        fontSize: 18,
+                                        fontSize: displayWidth(context) * 0.05,
                                       ),
                                     ),
                               decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 255, 255),
-                                  borderRadius: BorderRadius.circular(
-                                      changetwoButton ? 150 : 5)),
+                                color: Color.fromARGB(255, 255, 255, 255),
+                                borderRadius: BorderRadius.circular(
+                                    changetwoButton ? 150 : 5),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.5),
+                                    spreadRadius: 5,
+                                    blurRadius: 7,
+                                    offset: Offset(
+                                        0, 3), // changes position of shadow
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                           SizedBox(
@@ -272,7 +291,7 @@ class CustomSliverDelegate extends SliverPersistentHeaderDelegate {
     final proportion = 2 - (expandedHeight / appBarSize);
     final percent = proportion < 0 || proportion > 1 ? 0.0 : proportion;
     return SizedBox(
-      height: expandedHeight + expandedHeight / 3,
+      height: expandedHeight + expandedHeight / 1.7,
       child: Stack(
         children: [
           SizedBox(
@@ -320,7 +339,7 @@ class CustomSliverDelegate extends SliverPersistentHeaderDelegate {
                     child: Text("འབྲུག་གི་ས་གནས་གཞུང།",
                         style: TextStyle(
                             fontWeight: FontWeight.w600,
-                            fontSize: 20,
+                            fontSize: displayWidth(context) * 0.07,
                             color: Color.fromARGB(255, 2, 2, 2))),
                   ),
                 ),

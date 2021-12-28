@@ -2,8 +2,14 @@ import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/services.dart';
+import 'package:lgapplication/api/acts_api.dart';
+import 'package:lgapplication/model/acts_eng.dart';
+import 'package:lgapplication/pages/chapter_en_act.dart';
+import 'package:lgapplication/utls/routes.dart';
 import 'dart:async';
 import 'package:lgapplication/widgets/drawer.dart';
+
+import '../sizers_helpers.dart';
 
 class LawPage extends StatefulWidget {
   @override
@@ -61,6 +67,19 @@ class _LawPageState extends State<LawPage> {
     super.initState();
   }
 
+  moveToChapter(BuildContext context) async {
+    if (_myformkey.currentState!.validate()) {
+      setState(() {
+        changeButton = true;
+      });
+      await Future.delayed(Duration(seconds: 1));
+      await Navigator.pushNamed(context, MyRoutes.lawRoute);
+      setState(() {
+        changeButton = false;
+      });
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -90,7 +109,68 @@ class _LawPageState extends State<LawPage> {
                       expandedHeight: 85,
                     ),
                   ),
-                  SliverFillRemaining(),
+                  SliverFillRemaining(
+                      child: Container(
+                    child: FutureBuilder<List<Acts_English>>(
+                      future: ActsApi.getActsLocali(context),
+                      builder: (context, snapshot) {
+                        final acte = snapshot.data;
+
+                        switch (snapshot.connectionState) {
+                          case ConnectionState.waiting:
+                            return Center(
+                              child: CircularProgressIndicator(),
+                            );
+                          default:
+                            if (snapshot.hasError) {
+                              return Center(
+                                child: Text(
+                                    'some error occurred! Please hold on..'),
+                              );
+                            } else {
+                              return Column(
+                                children: [
+                                  Expanded(
+                                    child: ListTile(
+                                      title: Text(
+                                        "Preamble",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          fontSize:
+                                              displayWidth(context) * 0.065,
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.w900,
+                                        ),
+                                      ),
+                                      subtitle: Container(
+                                        width: displayWidth(context) * 0.9,
+                                        child: Text(
+                                          "Whereas, the Constitution of the Kingdom of Bhutan provides  for direct participation of the people in the development and  management of their own social, economic and environmental  wellbeing through decentralization and devolution of power and  authority; " +
+                                              '\n\n'
+                                                  "Whereas, the Local Governments are elected bodies to represent  the interests of local communities and fulfill their aspirations and  needs;" +
+                                              '\n\n'
+                                                  "Parliament of Bhutan do hereby enacts as follows:",
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                            fontSize:
+                                                displayWidth(context) * 0.045,
+                                            height: 1.5,
+                                            fontWeight: FontWeight.w100,
+                                            color: Color.fromARGB(
+                                                255, 255, 255, 255),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(child: buildActs(acte!)),
+                                ],
+                              );
+                            }
+                        }
+                      },
+                    ),
+                  )),
                 ],
               ),
             ),
@@ -101,6 +181,58 @@ class _LawPageState extends State<LawPage> {
     );
   }
 }
+
+Widget buildActs(List<Acts_English> acte) => ListView.builder(
+      // ignore: prefer_const_constructors
+      physics: BouncingScrollPhysics(),
+      itemCount: acte.length,
+      itemBuilder: (context, index) {
+        final sact = acte[index];
+        return InkWell(
+          onTap: () => Navigator.of(context).push(MaterialPageRoute(
+            builder: (BuildContext context) => ChapterenAct(sact: sact),
+          )),
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(0, 5.0, 20.0, 5.0),
+            child: AnimatedContainer(
+              duration: Duration(seconds: 1),
+              width: displayWidth(context) * 0.98,
+              height: displayHeight(context) * 0.07,
+              alignment: Alignment.centerLeft,
+              child: ListTile(
+                leading: Text(
+                  sact.title + ":",
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 255, 255, 255),
+                    fontSize: displayWidth(context) * 0.04,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                title: Text(sact.subtitle,
+                    style: TextStyle(
+                        color: Color(0xffe8a348),
+                        fontSize: displayWidth(context) * 0.038,
+                        fontWeight: FontWeight.w500)),
+              ),
+              decoration: BoxDecoration(
+                color: Color(0xff486958),
+                borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(5),
+                    bottomRight: Radius.circular(5)),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+              ),
+            ),
+          ),
+        );
+      },
+    );
 
 class CustomSliverDelegate extends SliverPersistentHeaderDelegate {
   final double expandedHeight;

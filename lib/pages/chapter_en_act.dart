@@ -3,10 +3,17 @@ import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/services.dart';
+import 'package:lgapplication/model/acts_eng.dart';
 import 'package:lgapplication/utls/routes.dart';
 import 'package:lgapplication/widgets/drawer.dart';
 
 class ChapterenAct extends StatefulWidget {
+  final Acts_English sact;
+  const ChapterenAct({
+    Key? key,
+    required this.sact,
+  }) : super(key: key);
+
   @override
   _ChapterenActState createState() => _ChapterenActState();
 }
@@ -124,7 +131,14 @@ class _ChapterenActState extends State<ChapterenAct> {
                     expandedHeight: 95,
                   ),
                 ),
-                SliverFillRemaining(),
+                SliverFillRemaining(
+                  child: SingleChildScrollView(
+                      child: Center(
+                    child: Column(
+                      children: [],
+                    ),
+                  )),
+                ),
               ],
             ),
           ),
