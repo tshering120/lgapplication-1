@@ -2,8 +2,9 @@ import 'package:lgapplication/utls/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 import 'package:share/share.dart';
-import 'package:sizer/sizer.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import '../sizers_helpers.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -65,39 +66,37 @@ class _LoginPageState extends State<LoginPage> {
         child: Stack(
           children: [
             Positioned.fill(
-                child: Image.asset(
-              'assets/images/homebg2.png',
-              fit: BoxFit.cover,
-            )),
+                child: Image.asset('assets/images/homebg2.png',
+                    height: MediaQuery.of(context).size.height,
+                    width: MediaQuery.of(context).size.width,
+                    fit: BoxFit.cover)),
             Center(
               child: Form(
                 key: _formkey,
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     SizedBox(
-                      height: 400,
+                      height: displayHeight(context) * 0.6,
                     ),
                     Text(
                       "LOCAL GOVERNANCE \n OF BHUTAN",
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        fontSize: 27,
+                        fontSize: displayWidth(context) * 0.06,
                         fontFamily: 'Asap',
                         color: Color(0XFF2e3251),
                         fontWeight: FontWeight.w900,
                       ),
                     ),
                     SizedBox(
-                      height: 35,
+                      height: displayHeight(context) * 0.04,
                     ),
                     InkWell(
                       onTap: () => moveToHome(context),
                       child: AnimatedContainer(
                         duration: Duration(seconds: 1),
-                        width: changeButton ? 50 : 190,
-                        height: 50,
+                        width: changeButton ? 50 : displayWidth(context) * 0.5,
+                        height: displayHeight(context) * 0.06,
                         alignment: Alignment.center,
                         child: changeButton
                             ? Icon(Icons.done, color: Colors.white)
@@ -107,7 +106,7 @@ class _LoginPageState extends State<LoginPage> {
                                   color: Colors.white,
                                   fontFamily: 'Uchen' 'serif',
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 18,
+                                  fontSize: displayWidth(context) * 0.053,
                                 ),
                               ),
                         decoration: BoxDecoration(
@@ -117,14 +116,15 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                     SizedBox(
-                      height: 15,
+                      height: displayHeight(context) * 0.02,
                     ),
                     InkWell(
                       onTap: () => moveToEnglish(context),
                       child: AnimatedContainer(
                         duration: Duration(seconds: 1),
-                        width: changetwoButton ? 50 : 190,
-                        height: 50,
+                        width:
+                            changetwoButton ? 50 : displayWidth(context) * 0.5,
+                        height: displayHeight(context) * 0.06,
                         alignment: Alignment.center,
                         child: changetwoButton
                             ? Icon(Icons.done, color: Colors.white)
@@ -133,7 +133,7 @@ class _LoginPageState extends State<LoginPage> {
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 18,
+                                  fontSize: displayWidth(context) * 0.05,
                                 ),
                               ),
                         decoration: BoxDecoration(
@@ -143,21 +143,21 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                     SizedBox(
-                      height: 25,
+                      height: displayHeight(context) * 0.03,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         ClipRRect(
                           child: Container(
-                            width: 43,
-                            height: 43,
+                            width: displayWidth(context) * 0.12,
+                            height: displayHeight(context) * 0.05,
                             alignment: Alignment.center,
                             child: IconButton(
                               icon: Icon(
                                 Icons.share,
                                 color: Colors.white,
-                                size: 25,
+                                size: displayWidth(context) * 0.04,
                               ),
                               onPressed: () {
                                 Share.share(
@@ -170,12 +170,12 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                         ),
                         SizedBox(
-                          width: 10,
+                          width: displayWidth(context) * 0.03,
                         ),
                         ClipRRect(
                           child: Container(
-                            width: 43,
-                            height: 43,
+                            width: displayWidth(context) * 0.12,
+                            height: displayHeight(context) * 0.05,
                             decoration: BoxDecoration(
                                 color: Color(0XFF3c5f4b),
                                 borderRadius: BorderRadius.circular(3)),
@@ -184,7 +184,7 @@ class _LoginPageState extends State<LoginPage> {
                               icon: Icon(
                                 Icons.question_answer,
                                 color: Colors.white,
-                                size: 25,
+                                size: displayWidth(context) * 0.04,
                               ),
                               onPressed: () {
                                 FaqPageModel(context);
@@ -193,18 +193,18 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                         ),
                         SizedBox(
-                          width: 10,
+                          width: displayWidth(context) * 0.03,
                         ),
                         ClipRRect(
                           child: Container(
-                            width: 43,
-                            height: 43,
+                            width: displayWidth(context) * 0.12,
+                            height: displayHeight(context) * 0.05,
                             alignment: Alignment.center,
                             child: IconButton(
                               icon: Icon(
                                 Icons.phone,
                                 color: Colors.white,
-                                size: 25,
+                                size: displayWidth(context) * 0.04,
                               ),
                               onPressed: () {
                                 ContactPageModel(context);
@@ -220,7 +220,7 @@ class _LoginPageState extends State<LoginPage> {
                   ],
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),

@@ -138,7 +138,6 @@ class _DzoactPageState extends State<DzoactPage> {
                               ),
                             ),
                           ),
-
                           IconButton(
                             onPressed: () async {
                               if (!isplaying && !audioplayed) {
@@ -172,7 +171,6 @@ class _DzoactPageState extends State<DzoactPage> {
                               size: 35.0,
                             ),
                           ),
-
                           SizedBox(
                             height: 1.0,
                           ),
@@ -201,24 +199,34 @@ class _DzoactPageState extends State<DzoactPage> {
                                       TextSpan(
                                           text: "ལེའུ་ ༡ པ།:",
                                           style: TextStyle(
-                                            color: Color(0xffe8a348),
+                                            color: Color.fromARGB(
+                                                255, 255, 255, 255),
                                             fontSize: 15,
                                             fontWeight: FontWeight.w600,
                                           )),
                                       TextSpan(
                                           text: " སྔོན་བརྗོད།",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 15,
                                               fontWeight: FontWeight.w500)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 255, 255),
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                       topRight: Radius.circular(5),
                                       bottomRight: Radius.circular(5)),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -244,24 +252,34 @@ class _DzoactPageState extends State<DzoactPage> {
                                       TextSpan(
                                           text: "ལེའུ་ ༢ པ།:",
                                           style: TextStyle(
-                                            color: Color(0xffe8a348),
+                                            color: Color.fromARGB(
+                                                255, 255, 255, 255),
                                             fontSize: 15,
                                             fontWeight: FontWeight.w600,
                                           )),
                                       TextSpan(
                                           text: " ས་གནས་གཞུང་།",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 15,
                                               fontWeight: FontWeight.w500)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 255, 255),
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                       topRight: Radius.circular(5),
                                       bottomRight: Radius.circular(5)),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -292,14 +310,15 @@ class _DzoactPageState extends State<DzoactPage> {
                                             TextSpan(
                                                 text: "ལེའུ་ ༣ པ།",
                                                 style: TextStyle(
-                                                  color: Color(0xffe8a348),
+                                                  color: Color.fromARGB(
+                                                      255, 255, 255, 255),
                                                   fontSize: 15,
                                                   fontWeight: FontWeight.w600,
                                                 )),
                                             TextSpan(
                                                 text: " ས་གནས་གཞུང་གི་བཙག་འཐུ།",
                                                 style: TextStyle(
-                                                    color: Color(0xff486958),
+                                                    color: Color(0xffe8a348),
                                                     fontSize: 15,
                                                     fontWeight:
                                                         FontWeight.w500)),
@@ -307,10 +326,19 @@ class _DzoactPageState extends State<DzoactPage> {
                                         ),
                                       ),
                                 decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 255, 255),
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                       topRight: Radius.circular(5),
                                       bottomRight: Radius.circular(5)),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -336,7 +364,8 @@ class _DzoactPageState extends State<DzoactPage> {
                                       TextSpan(
                                           text: "ལེའུ་ ༤ པ།:",
                                           style: TextStyle(
-                                            color: Color(0xffe8a348),
+                                            color: Color.fromARGB(
+                                                255, 255, 255, 255),
                                             fontSize: 15,
                                             fontWeight: FontWeight.w600,
                                           )),
@@ -344,685 +373,32 @@ class _DzoactPageState extends State<DzoactPage> {
                                           text:
                                               " ས་གནས་གཞུང་གི་ དབང་ཚད་དང་ ལས་འགན།",
                                           style: TextStyle(
-                                              color: Color(0xff486958),
+                                              color: Color(0xffe8a348),
                                               fontSize: 15,
                                               fontWeight: FontWeight.w500)),
                                     ]),
                                   ),
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 255, 255),
+                                  color: Color(0xff486958),
                                   borderRadius: BorderRadius.only(
                                       topRight: Radius.circular(5),
                                       bottomRight: Radius.circular(5)),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
                           ),
                           SizedBox(
                             height: 15.0,
-                          ),
-
-                          //chapter 5
-                          InkWell(
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.fromLTRB(0, 5.0, 20.0, 5.0),
-                              child: AnimatedContainer(
-                                duration: Duration(seconds: 1),
-                                width: 390,
-                                height: 47,
-                                alignment: Alignment.centerLeft,
-                                child: Padding(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(35.0, 0, 0, 0),
-                                  child: RichText(
-                                    textAlign: TextAlign.center,
-                                    text: TextSpan(children: <TextSpan>[
-                                      TextSpan(
-                                          text: "ལེའུ་ ༥ པ།:",
-                                          style: TextStyle(
-                                            color: Color(0xffe8a348),
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.w600,
-                                          )),
-                                      TextSpan(
-                                          text: " ཁྲི་འཛིན། ",
-                                          style: TextStyle(
-                                              color: Color(0xff486958),
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.w500)),
-                                    ]),
-                                  ),
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 255, 255),
-                                  borderRadius: BorderRadius.only(
-                                      topRight: Radius.circular(5),
-                                      bottomRight: Radius.circular(5)),
-                                ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 15.0,
-                          ),
-                          //chapter 6
-                          InkWell(
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.fromLTRB(0, 5.0, 20.0, 5.0),
-                              child: AnimatedContainer(
-                                duration: Duration(seconds: 1),
-                                width: 390,
-                                height: 47,
-                                alignment: Alignment.centerLeft,
-                                child: Padding(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(35.0, 0, 0, 0),
-                                  child: RichText(
-                                    textAlign: TextAlign.center,
-                                    text: TextSpan(children: <TextSpan>[
-                                      TextSpan(
-                                          text: "ལེའུ་ ༦ པ།:",
-                                          style: TextStyle(
-                                            color: Color(0xffe8a348),
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.w600,
-                                          )),
-                                      TextSpan(
-                                          text: " འཐུས་མི་ཚུའི་ལཱ་དང་ འགན་ཁུར།",
-                                          style: TextStyle(
-                                              color: Color(0xff486958),
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.w500)),
-                                    ]),
-                                  ),
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 255, 255),
-                                  borderRadius: BorderRadius.only(
-                                      topRight: Radius.circular(5),
-                                      bottomRight: Radius.circular(5)),
-                                ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 15.0,
-                          ),
-                          //chapter 7
-                          InkWell(
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.fromLTRB(0, 5.0, 20.0, 5.0),
-                              child: AnimatedContainer(
-                                duration: Duration(seconds: 1),
-                                width: 390,
-                                height: 47,
-                                alignment: Alignment.centerLeft,
-                                child: Padding(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(35.0, 0, 0, 0),
-                                  child: RichText(
-                                    textAlign: TextAlign.center,
-                                    text: TextSpan(children: <TextSpan>[
-                                      TextSpan(
-                                          text: "ལེའུ་ ༧ པ།:",
-                                          style: TextStyle(
-                                            color: Color(0xffe8a348),
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.w600,
-                                          )),
-                                      TextSpan(
-                                          text: " ཚོགས་རིམ་དང་བྱ་སྒོ། ",
-                                          style: TextStyle(
-                                              color: Color(0xff486958),
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.w500)),
-                                    ]),
-                                  ),
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 255, 255),
-                                  borderRadius: BorderRadius.only(
-                                      topRight: Radius.circular(5),
-                                      bottomRight: Radius.circular(5)),
-                                ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 15.0,
-                          ),
-
-                          //chapter 8
-                          InkWell(
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.fromLTRB(0, 5.0, 20.0, 5.0),
-                              child: AnimatedContainer(
-                                duration: Duration(seconds: 1),
-                                width: 390,
-                                height: 47,
-                                alignment: Alignment.centerLeft,
-                                child: Padding(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(35.0, 0, 0, 0),
-                                  child: RichText(
-                                    textAlign: TextAlign.center,
-                                    text: TextSpan(children: <TextSpan>[
-                                      TextSpan(
-                                          text: "ལེའུ་ ༨ པ།:",
-                                          style: TextStyle(
-                                            color: Color(0xffe8a348),
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.w600,
-                                          )),
-                                      TextSpan(
-                                          text: "  བྱ་སྒོའི་ཀུན་སྤྱོད། ",
-                                          style: TextStyle(
-                                              color: Color(0xff486958),
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.w500)),
-                                    ]),
-                                  ),
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 255, 255),
-                                  borderRadius: BorderRadius.only(
-                                      topRight: Radius.circular(5),
-                                      bottomRight: Radius.circular(5)),
-                                ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 15.0,
-                          ),
-                          //chapter 9
-                          InkWell(
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.fromLTRB(0, 5.0, 20.0, 5.0),
-                              child: AnimatedContainer(
-                                duration: Duration(seconds: 1),
-                                width: 390,
-                                height: 47,
-                                alignment: Alignment.centerLeft,
-                                child: Padding(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(35.0, 0, 0, 0),
-                                  child: RichText(
-                                    textAlign: TextAlign.center,
-                                    text: TextSpan(children: <TextSpan>[
-                                      TextSpan(
-                                          text: "ལེའུ་ ༩ པ།:",
-                                          style: TextStyle(
-                                            color: Color(0xffe8a348),
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.w600,
-                                          )),
-                                      TextSpan(
-                                          text:
-                                              " ཚོགས་རིམ་དང་གྲོས་ཆོད་ཀྱི་གནས་ཐོ། ",
-                                          style: TextStyle(
-                                              color: Color(0xff486958),
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.w500)),
-                                    ]),
-                                  ),
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 255, 255),
-                                  borderRadius: BorderRadius.only(
-                                      topRight: Radius.circular(5),
-                                      bottomRight: Radius.circular(5)),
-                                ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 15.0,
-                          ),
-                          // chapter 10
-                          InkWell(
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.fromLTRB(0, 5.0, 20.0, 5.0),
-                              child: AnimatedContainer(
-                                duration: Duration(seconds: 1),
-                                width: 390,
-                                height: 47,
-                                alignment: Alignment.centerLeft,
-                                child: Padding(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(35.0, 0, 0, 0),
-                                  child: RichText(
-                                    textAlign: TextAlign.center,
-                                    text: TextSpan(children: <TextSpan>[
-                                      TextSpan(
-                                          text: "ལེའུ་ ༡༠ པ།:",
-                                          style: TextStyle(
-                                            color: Color(0xffe8a348),
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.w600,
-                                          )),
-                                      TextSpan(
-                                          text: " དྭངས་གསལ་དང་འཁྲི་འགན། ",
-                                          style: TextStyle(
-                                              color: Color(0xff486958),
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.w500)),
-                                    ]),
-                                  ),
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 255, 255),
-                                  borderRadius: BorderRadius.only(
-                                      topRight: Radius.circular(5),
-                                      bottomRight: Radius.circular(5)),
-                                ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 15.0,
-                          ),
-                          // chapter 11
-                          InkWell(
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.fromLTRB(0, 5.0, 20.0, 5.0),
-                              child: AnimatedContainer(
-                                duration: Duration(seconds: 1),
-                                width: 390,
-                                height: 47,
-                                alignment: Alignment.centerLeft,
-                                child: Padding(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(35.0, 0, 0, 0),
-                                  child: RichText(
-                                    textAlign: TextAlign.center,
-                                    text: TextSpan(children: <TextSpan>[
-                                      TextSpan(
-                                          text: "ལེའུ་ ༡༡ པ།:",
-                                          style: TextStyle(
-                                            color: Color(0xffe8a348),
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.w600,
-                                          )),
-                                      TextSpan(
-                                          text:
-                                              " ཁེ་དབང་དང་ བཀག་ཆ་ དངུལ་ཕོགས། ",
-                                          style: TextStyle(
-                                              color: Color(0xff486958),
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.w500)),
-                                    ]),
-                                  ),
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 255, 255),
-                                  borderRadius: BorderRadius.only(
-                                      topRight: Radius.circular(5),
-                                      bottomRight: Radius.circular(5)),
-                                ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 15.0,
-                          ),
-                          //  chapter 12
-                          InkWell(
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.fromLTRB(0, 5.0, 20.0, 5.0),
-                              child: AnimatedContainer(
-                                duration: Duration(seconds: 1),
-                                width: 390,
-                                height: 47,
-                                alignment: Alignment.centerLeft,
-                                child: Padding(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(35.0, 0, 0, 0),
-                                  child: RichText(
-                                    textAlign: TextAlign.center,
-                                    text: TextSpan(children: <TextSpan>[
-                                      TextSpan(
-                                          text: "ལེའུ་ ༡༢ པ།:",
-                                          style: TextStyle(
-                                            color: Color(0xffe8a348),
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.w600,
-                                          )),
-                                      TextSpan(
-                                          text: " ཀུན་སྤྱོད་རྣམ་གཞག། ",
-                                          style: TextStyle(
-                                              color: Color(0xff486958),
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.w500)),
-                                    ]),
-                                  ),
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 255, 255),
-                                  borderRadius: BorderRadius.only(
-                                      topRight: Radius.circular(5),
-                                      bottomRight: Radius.circular(5)),
-                                ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 15.0,
-                          ),
-                          //chapter 13
-                          InkWell(
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.fromLTRB(0, 5.0, 20.0, 5.0),
-                              child: AnimatedContainer(
-                                duration: Duration(seconds: 1),
-                                width: 390,
-                                height: 47,
-                                alignment: Alignment.centerLeft,
-                                child: Padding(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(35.0, 0, 0, 0),
-                                  child: RichText(
-                                    textAlign: TextAlign.center,
-                                    text: TextSpan(children: <TextSpan>[
-                                      TextSpan(
-                                          text: "ལེའུ་ ༡༣ པ།:",
-                                          style: TextStyle(
-                                            color: Color(0xffe8a348),
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.w600,
-                                          )),
-                                      TextSpan(
-                                          text: "  ཚོགས་ཆུང་། ",
-                                          style: TextStyle(
-                                              color: Color(0xff486958),
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.w500)),
-                                    ]),
-                                  ),
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 255, 255),
-                                  borderRadius: BorderRadius.only(
-                                      topRight: Radius.circular(5),
-                                      bottomRight: Radius.circular(5)),
-                                ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 15.0,
-                          ),
-                          // chapter 14
-                          InkWell(
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.fromLTRB(0, 5.0, 20.0, 5.0),
-                              child: AnimatedContainer(
-                                duration: Duration(seconds: 1),
-                                width: 390,
-                                height: 47,
-                                alignment: Alignment.centerLeft,
-                                child: Padding(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(35.0, 0, 0, 0),
-                                  child: RichText(
-                                    textAlign: TextAlign.center,
-                                    text: TextSpan(children: <TextSpan>[
-                                      TextSpan(
-                                          text: "ལེའུ་ ༡༤ པ།:",
-                                          style: TextStyle(
-                                            color: Color(0xffe8a348),
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.w600,
-                                          )),
-                                      TextSpan(
-                                          text: " ལྟ་རྟོག་དང་མཉམ་འབྲེལ། ",
-                                          style: TextStyle(
-                                              color: Color(0xff486958),
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.w500)),
-                                    ]),
-                                  ),
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 255, 255),
-                                  borderRadius: BorderRadius.only(
-                                      topRight: Radius.circular(5),
-                                      bottomRight: Radius.circular(5)),
-                                ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 15.0,
-                          ),
-                          //chapter 15
-                          InkWell(
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.fromLTRB(0, 5.0, 20.0, 5.0),
-                              child: AnimatedContainer(
-                                duration: Duration(seconds: 1),
-                                width: 390,
-                                height: 47,
-                                alignment: Alignment.centerLeft,
-                                child: Padding(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(35.0, 0, 0, 0),
-                                  child: RichText(
-                                    textAlign: TextAlign.center,
-                                    text: TextSpan(children: <TextSpan>[
-                                      TextSpan(
-                                          text: "ལེའུ་ ༡༥ པ།:",
-                                          style: TextStyle(
-                                            color: Color(0xffe8a348),
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.w600,
-                                          )),
-                                      TextSpan(
-                                          text: " དངུལ་འབྲེལ་རང་སྐྱོང་། ",
-                                          style: TextStyle(
-                                              color: Color(0xff486958),
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.w500)),
-                                    ]),
-                                  ),
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 255, 255),
-                                  borderRadius: BorderRadius.only(
-                                      topRight: Radius.circular(5),
-                                      bottomRight: Radius.circular(5)),
-                                ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 15.0,
-                          ),
-                          //chapter 16
-                          InkWell(
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.fromLTRB(0, 5.0, 20.0, 5.0),
-                              child: AnimatedContainer(
-                                duration: Duration(seconds: 1),
-                                width: 390,
-                                height: 47,
-                                alignment: Alignment.centerLeft,
-                                child: Padding(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(35.0, 0, 0, 0),
-                                  child: RichText(
-                                    textAlign: TextAlign.center,
-                                    text: TextSpan(children: <TextSpan>[
-                                      TextSpan(
-                                          text: "ལེའུ་ ༡༦ པ།:",
-                                          style: TextStyle(
-                                            color: Color(0xffe8a348),
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.w600,
-                                          )),
-                                      TextSpan(
-                                          text: " ས་གནས་གཞུང་གི་ཡིག་ཚང་། ",
-                                          style: TextStyle(
-                                              color: Color(0xff486958),
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.w500)),
-                                    ]),
-                                  ),
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 255, 255),
-                                  borderRadius: BorderRadius.only(
-                                      topRight: Radius.circular(5),
-                                      bottomRight: Radius.circular(5)),
-                                ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 15.0,
-                          ),
-                          //chapter 17
-                          InkWell(
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.fromLTRB(0, 5.0, 20.0, 5.0),
-                              child: AnimatedContainer(
-                                duration: Duration(seconds: 1),
-                                width: 390,
-                                height: 47,
-                                alignment: Alignment.centerLeft,
-                                child: Padding(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(35.0, 0, 0, 0),
-                                  child: RichText(
-                                    textAlign: TextAlign.center,
-                                    text: TextSpan(children: <TextSpan>[
-                                      TextSpan(
-                                          text: "ལེའུ་ ༡༧ པ།:",
-                                          style: TextStyle(
-                                            color: Color(0xffe8a348),
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.w600,
-                                          )),
-                                      TextSpan(
-                                          text: " ས་གནས་གཞུང་གི་བདག་སྐྱོང་། ",
-                                          style: TextStyle(
-                                              color: Color(0xff486958),
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.w500)),
-                                    ]),
-                                  ),
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 255, 255),
-                                  borderRadius: BorderRadius.only(
-                                      topRight: Radius.circular(5),
-                                      bottomRight: Radius.circular(5)),
-                                ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 15.0,
-                          ),
-                          //chapter 18
-                          InkWell(
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.fromLTRB(0, 5.0, 20.0, 5.0),
-                              child: AnimatedContainer(
-                                duration: Duration(seconds: 1),
-                                width: 390,
-                                height: 47,
-                                alignment: Alignment.centerLeft,
-                                child: Padding(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(35.0, 0, 0, 0),
-                                  child: RichText(
-                                    textAlign: TextAlign.center,
-                                    text: TextSpan(children: <TextSpan>[
-                                      TextSpan(
-                                          text: "ལེའུ་ ༡༨ པ།:",
-                                          style: TextStyle(
-                                            color: Color(0xffe8a348),
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.w600,
-                                          )),
-                                      TextSpan(
-                                          text: " གནོད་འགེལ། ",
-                                          style: TextStyle(
-                                              color: Color(0xff486958),
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.w500)),
-                                    ]),
-                                  ),
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 255, 255),
-                                  borderRadius: BorderRadius.only(
-                                      topRight: Radius.circular(5),
-                                      bottomRight: Radius.circular(5)),
-                                ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 15.0,
-                          ),
-
-                          //chapter 19
-                          InkWell(
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.fromLTRB(0, 5.0, 20.0, 5.0),
-                              child: AnimatedContainer(
-                                duration: Duration(seconds: 1),
-                                width: 390,
-                                height: 47,
-                                alignment: Alignment.centerLeft,
-                                child: Padding(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(35.0, 0, 0, 0),
-                                  child: RichText(
-                                    textAlign: TextAlign.center,
-                                    text: TextSpan(children: <TextSpan>[
-                                      TextSpan(
-                                          text: "ལེའུ་ ༡༩ པ།:",
-                                          style: TextStyle(
-                                            color: Color(0xffe8a348),
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.w600,
-                                          )),
-                                      TextSpan(
-                                          text: " སྣ་ཚོགས་དགོངས་དོན། ",
-                                          style: TextStyle(
-                                              color: Color(0xff486958),
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.w500)),
-                                    ]),
-                                  ),
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 255, 255),
-                                  borderRadius: BorderRadius.only(
-                                      topRight: Radius.circular(5),
-                                      bottomRight: Radius.circular(5)),
-                                ),
-                              ),
-                            ),
                           ),
                           SizedBox(
                             height: 15.0,

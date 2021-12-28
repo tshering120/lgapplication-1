@@ -32,11 +32,13 @@ dependencies:
   google_fonts: ^2.1.0
   url_launcher: ^6.0.17
   share: ^2.0.4
-  flutter_phone_direct_caller: ^2.1.0
-  flutter_launcher_icons: "^0.9.2"
+  flutter_phone_direct_caller:
   animated_splash_screen: ^1.1.0
   sizer: ^2.0.15
-  audioplayers: ^0.20.1
+  audioplayers:
+  http: 
+  path_provider: 
+
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -46,6 +48,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: "^0.9.2"
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -54,6 +57,12 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^1.0.0
 
+flutter_icons:
+  image_path_android: "assets/icon/logo.png"
+  image_path_ios: "assets/icon/logo.png"
+  android: true
+  ios: true 
+  remove_alpha_ios: true 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -81,6 +90,7 @@ flutter:
     - assets/images/com_bg.png
     - assets/audio/
     - assets/images/
+    - assets/acts_english.json
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

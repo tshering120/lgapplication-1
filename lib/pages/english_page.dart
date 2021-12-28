@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:lgapplication/utls/routes.dart';
 import 'package:lgapplication/widgets/drawer.dart';
 
+import '../sizers_helpers.dart';
+
 class EnglishPage extends StatefulWidget {
   const EnglishPage({Key? key}) : super(key: key);
 
@@ -65,7 +67,7 @@ class _EnglishPageState extends State<EnglishPage> {
                   pinned: true,
                   floating: true,
                   delegate: CustomSliverDelegate(
-                    expandedHeight: 95,
+                    expandedHeight: displayHeight(context) * 0.099,
                   ),
                 ),
                 SliverFillRemaining(
@@ -74,22 +76,20 @@ class _EnglishPageState extends State<EnglishPage> {
                       key: _myformkey,
                       child: Column(
                         children: [
-                          Padding(
-                            padding: const EdgeInsets.symmetric(
-                              vertical: 0.0,
-                              horizontal: 25.0,
-                            ),
+                          Container(
+                            width: displayWidth(context) * 0.9,
                             child: Text(
                               "The Department of Local Governance began as Local Governance Division in 2005 under the Ministry of Home and Cultural Affairs to strengthen the Local Government. In 2009, the Division was upgraded to the Department of Local Governance in accordance with Article 9 (8) and Article 22 (1) of the Constitution of the Kingdom of Bhutan and the Local Government Act 2009 which charts out the legal framework for the Local Government. Basically, the Department is mandated to promote and strengthen local governance; to coordinate development of the Local Government’s capacities; and to bolster the inter-governmental coordination. The mandate envisages the Local Government making informed decisions and implementing coordinated activities by the Local Government.",
                               style: TextStyle(
-                                fontSize: 14.5,
-                                height: 1.4,
+                                fontSize: displayWidth(context) * 0.034,
+                                height: 1.5,
                                 color: Colors.white,
+                                fontWeight: FontWeight.w200,
                               ),
                             ),
                           ),
                           SizedBox(
-                            height: 1.0,
+                            height: displayHeight(context) * 0.01,
                           ),
                           Padding(
                             padding: const EdgeInsets.symmetric(
@@ -101,8 +101,10 @@ class _EnglishPageState extends State<EnglishPage> {
                             onTap: () => moveToLaw(context),
                             child: AnimatedContainer(
                               duration: Duration(seconds: 1),
-                              width: changeButton ? 150 : 300,
-                              height: 37,
+                              width: changeButton
+                                  ? displayWidth(context) * 0.5
+                                  : displayWidth(context) * 0.7,
+                              height: displayHeight(context) * 0.05,
                               alignment: Alignment.center,
                               child: changeButton
                                   ? Icon(
@@ -114,7 +116,7 @@ class _EnglishPageState extends State<EnglishPage> {
                                       style: TextStyle(
                                         color: Color.fromARGB(255, 0, 0, 0),
                                         fontWeight: FontWeight.w500,
-                                        fontSize: 18,
+                                        fontSize: displayWidth(context) * 0.035,
                                       ),
                                     ),
                               decoration: BoxDecoration(
@@ -134,14 +136,16 @@ class _EnglishPageState extends State<EnglishPage> {
                             ),
                           ),
                           SizedBox(
-                            height: 10.0,
+                            height: displayHeight(context) * 0.02,
                           ),
                           InkWell(
                             onTap: () => moveToRule(context),
                             child: AnimatedContainer(
                               duration: Duration(seconds: 1),
-                              width: changetwoButton ? 150 : 300,
-                              height: 37,
+                              width: changetwoButton
+                                  ? displayWidth(context) * 0.5
+                                  : displayWidth(context) * 0.7,
+                              height: displayHeight(context) * 0.05,
                               alignment: Alignment.center,
                               child: changetwoButton
                                   ? Icon(
@@ -153,7 +157,7 @@ class _EnglishPageState extends State<EnglishPage> {
                                       style: TextStyle(
                                         color: Color.fromARGB(255, 0, 0, 0),
                                         fontWeight: FontWeight.w500,
-                                        fontSize: 18,
+                                        fontSize: displayWidth(context) * 0.035,
                                       ),
                                     ),
                               decoration: BoxDecoration(
@@ -207,13 +211,13 @@ class CustomSliverDelegate extends SliverPersistentHeaderDelegate {
     final proportion = 2 - (expandedHeight / appBarSize);
     final percent = proportion < 0 || proportion > 1 ? 0.0 : proportion;
     return SizedBox(
-      height: expandedHeight + expandedHeight / 3,
+      height: expandedHeight + expandedHeight / 1.7,
       child: Stack(
         children: [
           SizedBox(
             height: appBarSize < kToolbarHeight ? kToolbarHeight : appBarSize,
             child: AppBar(
-              toolbarHeight: 60,
+              toolbarHeight: 90,
               flexibleSpace: Container(
                 decoration: BoxDecoration(
                   image: DecorationImage(
@@ -255,7 +259,7 @@ class CustomSliverDelegate extends SliverPersistentHeaderDelegate {
                     child: Text("Local Government of Bhutan",
                         style: TextStyle(
                           fontWeight: FontWeight.w600,
-                          fontSize: 20,
+                          fontSize: displayWidth(context) * 0.05,
                           color: Color.fromARGB(255, 0, 0, 0),
                         )),
                   ),
