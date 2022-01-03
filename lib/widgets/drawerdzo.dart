@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:lgapplication/pages/all_dz_act.dart';
 import 'package:lgapplication/pages/all_dz_rule.dart';
 import 'package:page_transition/page_transition.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../pages/homepage.dart';
 
@@ -159,7 +160,7 @@ class MyDrawerdzo extends StatelessWidget {
                 splashColor: Colors.white,
                 onTap: () => Navigator.of(context).push(PageTransition(
                   type: PageTransitionType.fade,
-                  child: DzoactPage(),
+                  child: DzorulePage(),
                 )),
                 child: Ink(
                   height: 50,
@@ -198,10 +199,7 @@ class MyDrawerdzo extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.fromLTRB(20.0, 0, 10.0, 0),
               child: InkWell(
-                onTap: () => Navigator.of(context).push(PageTransition(
-                  type: PageTransitionType.fade,
-                  child: LoginPage(),
-                )),
+                onTap: _dwebURL,
                 child: Ink(
                   height: 50,
                   child: Row(
@@ -240,10 +238,6 @@ class MyDrawerdzo extends StatelessWidget {
               height: 20,
             ),
             InkWell(
-              onTap: () => Navigator.of(context).push(PageTransition(
-                type: PageTransitionType.rotate,
-                child: LoginPage(),
-              )),
               child: Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 70, vertical: 10),
@@ -268,10 +262,7 @@ class MyDrawerdzo extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(20.0, 0, 10.0, 0),
               child: InkWell(
                 splashColor: Colors.white,
-                onTap: () => Navigator.of(context).push(PageTransition(
-                  type: PageTransitionType.fade,
-                  child: LoginPage(),
-                )),
+                onTap: _dwebhomeURL,
                 child: Ink(
                   height: 50,
                   child: Row(
@@ -280,103 +271,16 @@ class MyDrawerdzo extends StatelessWidget {
                       Row(
                         children: [
                           Container(
-                            decoration: BoxDecoration(
-                              color: Color(0xffec9015),
-                            ),
                             child: Icon(
-                              Icons.share,
+                              Icons.language,
                               color: Colors.white,
-                              size: 30,
+                              size: 29,
                             ),
                           ),
                           Padding(
                             padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
                             child: Text(
-                              'གཞན་ལུ་སླབ་ནི།',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 14,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(20.0, 0, 10.0, 0),
-              child: InkWell(
-                splashColor: Colors.white,
-                onTap: () => Navigator.of(context).push(PageTransition(
-                  type: PageTransitionType.fade,
-                  child: LoginPage(),
-                )),
-                child: Ink(
-                  height: 50,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Row(
-                        children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              color: Color(0xffec9015),
-                            ),
-                            child: Icon(
-                              Icons.question_answer,
-                              color: Colors.white,
-                              size: 30,
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
-                            child: Text(
-                              'འབྲེལ་མཐུད།',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 14,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(20.0, 0, 10.0, 0),
-              child: InkWell(
-                splashColor: Colors.white,
-                onTap: () => Navigator.of(context).push(PageTransition(
-                  type: PageTransitionType.fade,
-                  child: LoginPage(),
-                )),
-                child: Ink(
-                  height: 50,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Row(
-                        children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              color: Color(0xffec9015),
-                            ),
-                            child: Icon(
-                              Icons.phone,
-                              color: Colors.white,
-                              size: 30,
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
-                            child: Text(
-                              'འབྲེལ་བ་འཐབ་ས།',
+                              "འབྲུག་གི་ས་གནས་གཞུང།",
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 14,
@@ -394,5 +298,23 @@ class MyDrawerdzo extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+Future<void> _dwebURL() async {
+  const url = 'https://www.dlg.mohca.gov.bt/about-lg/20?language=dz';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+Future<void> _dwebhomeURL() async {
+  const url = 'https://www.dlg.mohca.gov.bt/?language=dz';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
   }
 }

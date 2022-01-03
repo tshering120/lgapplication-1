@@ -284,9 +284,6 @@ class _MyDrawerState extends State<MyDrawer> {
                       Row(
                         children: [
                           Container(
-                            decoration: BoxDecoration(
-                              color: Color(0xffec9015),
-                            ),
                             child: Icon(
                               Icons.language,
                               color: Colors.white,
@@ -328,16 +325,6 @@ Future<void> _webURL() async {
 
 Future<void> _webhomeURL() async {
   const url = 'https://www.dlg.mohca.gov.bt';
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Could not launch $url';
-  }
-}
-
-Future<void> _feedbackURL() async {
-  const url =
-      'mailto:rajatrrpalankar@gmail.com?subject=This is Subject Title&body=This is Body of Email';
   if (await canLaunch(url)) {
     await launch(url);
   } else {

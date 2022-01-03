@@ -189,7 +189,8 @@ class _LoginPageState extends State<LoginPage> {
                                 size: displayWidth(context) * 0.06,
                               ),
                               onPressed: () {
-                                FaqPageModel(context);
+                                launch(
+                                    'mailto:lgapplication2@gmail.com?subject=Your Title&body=Provide your feedback%20plugin');
                               },
                             ),
                           ),
@@ -236,6 +237,7 @@ void FaqPageModel(context) {
       builder: (BuildContext bc) {
         return new Scaffold(
           body: SingleChildScrollView(
+            reverse: true,
             child: new Column(
               children: <Widget>[
                 Row(
@@ -416,4 +418,3 @@ Future<void> _launchURL() async {
     throw 'Could not launch $url';
   }
 }
-
