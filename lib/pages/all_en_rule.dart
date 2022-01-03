@@ -180,7 +180,7 @@ Widget buildRules(List<Rules_English> rules) => ListView.builder(
         final sact = rules[index];
         return InkWell(
           onTap: () => Navigator.of(context).push(PageTransition(
-            type: PageTransitionType.bottomToTop,
+            type: PageTransitionType.leftToRight,
             child: ChapterRules(sact: sact),
           )),
           child: Padding(
