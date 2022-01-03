@@ -1,6 +1,6 @@
 import 'package:meta/meta.dart';
 
-class Acts_English {
+class Acts_Dzongkha {
   final String title;
   final String subtitle;
   final String des1;
@@ -32,7 +32,7 @@ class Acts_English {
   final String des14;
   final String url14;
 
-  const Acts_English({
+  const Acts_Dzongkha({
     required this.title,
     required this.subtitle,
     required this.des1,
@@ -65,7 +65,7 @@ class Acts_English {
     required this.url14,
   });
 
-  static Acts_English fromJson(json) => Acts_English(
+  static Acts_Dzongkha fromJson(json) => Acts_Dzongkha(
       title: json['title'],
       subtitle: json['subtitle'],
       des1: json['des1'],

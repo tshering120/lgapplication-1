@@ -205,7 +205,7 @@ Widget buildActs(List<Acts_English> acte) => ListView.builder(
             child: AnimatedContainer(
               duration: Duration(seconds: 1),
               width: displayWidth(context) * 0.98,
-              height: displayHeight(context) * 0.06,
+              height: displayHeight(context) * 0.07,
               alignment: Alignment.centerLeft,
               child: ListTile(
                 leading: Text(

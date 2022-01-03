@@ -1,6 +1,6 @@
 import 'package:meta/meta.dart';
 
-class Acts_English {
+class Rules_English {
   final String title;
   final String subtitle;
   final String des1;
@@ -31,8 +31,18 @@ class Acts_English {
   final String url13;
   final String des14;
   final String url14;
+  final String des15;
+  final String url15;
+  final String des16;
+  final String url16;
+  final String des17;
+  final String url17;
+  final String des18;
+  final String url18;
+  final String des19;
+  final String url19;
 
-  const Acts_English({
+  const Rules_English({
     required this.title,
     required this.subtitle,
     required this.des1,
@@ -63,9 +73,19 @@ class Acts_English {
     required this.url13,
     required this.des14,
     required this.url14,
+    required this.des15,
+    required this.url15,
+    required this.des16,
+    required this.url16,
+    required this.des17,
+    required this.url17,
+    required this.des18,
+    required this.url18,
+    required this.des19,
+    required this.url19,
   });
 
-  static Acts_English fromJson(json) => Acts_English(
+  static Rules_English fromJson(json) => Rules_English(
       title: json['title'],
       subtitle: json['subtitle'],
       des1: json['des1'],
@@ -95,5 +115,15 @@ class Acts_English {
       des13: json['des13'],
       url13: json['url13'],
       des14: json['des14'],
-      url14: json['url14']);
+      url14: json['url14'],
+      des15: json['des15'],
+      url15: json['url15'],
+      des16: json['des16'],
+      url16: json['url16'],
+      des17: json['des17'],
+      url17: json['url17'],
+      des18: json['des18'],
+      url18: json['url18'],
+      des19: json['des19'],
+      url19: json['url19']);
 }

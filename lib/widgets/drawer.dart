@@ -1,6 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:lgapplication/pages/all_en_act.dart';
+import 'package:lgapplication/pages/all_en_rule.dart';
+import 'package:lgapplication/pages/homepage.dart';
+import 'package:page_transition/page_transition.dart';
 import 'package:sizer/sizer.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../utls/routes.dart';
 
@@ -11,35 +16,7 @@ class MyDrawer extends StatefulWidget {
 
 class _MyDrawerState extends State<MyDrawer> {
   String name = "";
-  bool changetwoButton = false;
-  bool changeButton = false;
   final _myformkey = GlobalKey<FormState>();
-
-  moveToLaw(BuildContext context) async {
-    if (_myformkey.currentState!.validate()) {
-      setState(() {
-        changeButton = true;
-      });
-      await Future.delayed(Duration(seconds: 1));
-      await Navigator.pushNamed(context, MyRoutes.lawRoute);
-      setState(() {
-        changeButton = false;
-      });
-    }
-  }
-
-  moveToRule(BuildContext context) async {
-    if (_myformkey.currentState!.validate()) {
-      setState(() {
-        changetwoButton = true;
-      });
-      await Future.delayed(Duration(seconds: 1));
-      await Navigator.pushNamed(context, MyRoutes.ruleRoute);
-      setState(() {
-        changetwoButton = false;
-      });
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -106,18 +83,174 @@ class _MyDrawerState extends State<MyDrawer> {
                 ),
               ),
             ),
-            CustomListTile(Icons.home, 'Home', () => {}),
-            CustomListTile(Icons.keyboard_arrow_right_outlined,
-                'Local Goverment of Bhutan', () => {}),
-            CustomListTile(Icons.keyboard_arrow_right_outlined,
-                'Rules and Regulation', () => {}),
-            CustomListTile(
-                Icons.keyboard_arrow_right_outlined, 'Publication', () => {}),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20.0, 0, 10.0, 0),
+              child: InkWell(
+                splashColor: Colors.white,
+                onTap: () => Navigator.of(context).push(PageTransition(
+                  type: PageTransitionType.leftToRightWithFade,
+                  child: LoginPage(),
+                )),
+                child: Ink(
+                  height: 50,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Color(0xffec9015),
+                            ),
+                            child: Icon(
+                              Icons.home,
+                              color: Colors.white,
+                              size: 30,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
+                            child: Text(
+                              "Home",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20.0, 0, 10.0, 0),
+              child: InkWell(
+                splashColor: Colors.white,
+                onTap: () => Navigator.of(context).push(PageTransition(
+                  type: PageTransitionType.fade,
+                  child: LawPage(),
+                )),
+                child: Ink(
+                  height: 50,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Color(0xffec9015),
+                            ),
+                            child: Icon(
+                              Icons.keyboard_arrow_right_outlined,
+                              color: Colors.white,
+                              size: 30,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
+                            child: Text(
+                              "LG Act 2009",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20.0, 0, 10.0, 0),
+              child: InkWell(
+                splashColor: Colors.white,
+                onTap: () => Navigator.of(context).push(PageTransition(
+                  type: PageTransitionType.fade,
+                  child: RulePage(),
+                )),
+                child: Ink(
+                  height: 50,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Color(0xffec9015),
+                            ),
+                            child: Icon(
+                              Icons.keyboard_arrow_right_outlined,
+                              color: Colors.white,
+                              size: 30,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
+                            child: Text(
+                              " LG Rules and Regulation",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20.0, 0, 10.0, 0),
+              child: InkWell(
+                onTap: _webURL,
+                child: Ink(
+                  height: 50,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Color(0xffec9015),
+                            ),
+                            child: Icon(
+                              Icons.keyboard_arrow_right_outlined,
+                              color: Colors.white,
+                              size: 30,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
+                            child: Text(
+                              "Publications",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
             SizedBox(
               height: 20,
             ),
             InkWell(
-              onTap: () => moveToLaw(context),
               child: Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 70, vertical: 10),
@@ -138,9 +271,45 @@ class _MyDrawerState extends State<MyDrawer> {
                 ),
               ),
             ),
-            CustomListTile(Icons.share, 'Share', () => {}),
-            CustomListTile(Icons.question_answer, 'FAQs', () => {}),
-            CustomListTile(Icons.phone, 'Contact', () => {}),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20.0, 0, 10.0, 0),
+              child: InkWell(
+                splashColor: Colors.white,
+                onTap: _webhomeURL,
+                child: Ink(
+                  height: 50,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Color(0xffec9015),
+                            ),
+                            child: Icon(
+                              Icons.language,
+                              color: Colors.white,
+                              size: 29,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
+                            child: Text(
+                              "Department of Local Governance",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
@@ -148,52 +317,30 @@ class _MyDrawerState extends State<MyDrawer> {
   }
 }
 
-class CustomListTile extends StatelessWidget {
-  IconData icon;
-  String text;
-  Function onTap;
-  CustomListTile(this.icon, this.text, this.onTap);
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(20.0, 0, 10.0, 0),
-      child: InkWell(
-        splashColor: Colors.white,
-        onTap: () => {},
-        child: Container(
-          height: 50,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Row(
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Color(0xffec9015),
-                    ),
-                    child: Icon(
-                      icon,
-                      color: Colors.white,
-                      size: 30,
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
-                    child: Text(
-                      text,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
+Future<void> _webURL() async {
+  const url = 'https://www.dlg.mohca.gov.bt/about-lg/20';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+Future<void> _webhomeURL() async {
+  const url = 'https://www.dlg.mohca.gov.bt';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+Future<void> _feedbackURL() async {
+  const url =
+      'mailto:rajatrrpalankar@gmail.com?subject=This is Subject Title&body=This is Body of Email';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
   }
 }

@@ -7,7 +7,6 @@ class MyRoutes {
   static String ruleRoute = "/rule";
   static String dzoactRoute = "/dzolaw";
   static String dzoruleRoute = "/dzorule";
-  static String chapterdzactRoute = "/chapterdzact";
   static String contactRoute = "/contact";
   static String faqRoute = "/faq";
 }

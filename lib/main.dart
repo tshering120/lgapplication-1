@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:lgapplication/pages/chapter_dz_act.dart';
-import 'package:lgapplication/pages/dzongkha_act_page.dart';
-import 'package:lgapplication/pages/dzongkha_page.dart';
-import 'package:lgapplication/pages/dzongkha_rule_page.dart';
-import 'package:lgapplication/pages/english_page.dart';
-import 'package:lgapplication/pages/home_page.dart';
-import 'package:lgapplication/pages/law_page.dart';
-import 'package:lgapplication/pages/login_page.dart';
-import 'package:lgapplication/pages/rule_page.dart';
+import 'package:lgapplication/pages/all_dz_act.dart';
+import 'package:lgapplication/pages/dz_main.dart';
+import 'package:lgapplication/pages/all_dz_rule.dart';
+import 'package:lgapplication/pages/en_main.dart';
+import 'package:lgapplication/pages/splash_screen.dart';
+import 'package:lgapplication/pages/all_en_act.dart';
+import 'package:lgapplication/pages/homepage.dart';
+import 'package:lgapplication/pages/all_en_rule.dart';
 import 'package:lgapplication/utls/routes.dart';
 import 'package:lgapplication/widgets/themes.dart';
 
@@ -40,7 +39,6 @@ class MyApp extends StatelessWidget {
         MyRoutes.ruleRoute: (context) => RulePage(),
         MyRoutes.dzoactRoute: (context) => DzoactPage(),
         MyRoutes.dzoruleRoute: (context) => DzorulePage(),
-        MyRoutes.chapterdzactRoute: (context) => ChapterdzAct(),
       },
     );
   }

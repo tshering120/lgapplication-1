@@ -188,7 +188,7 @@ Widget buildRules(List<Rules_English> rules) => ListView.builder(
             child: AnimatedContainer(
               duration: Duration(seconds: 1),
               width: displayWidth(context) * 0.98,
-              height: displayHeight(context) * 0.06,
+              height: displayHeight(context) * 0.065,
               alignment: Alignment.centerLeft,
               child: ListTile(
                 leading: Text(

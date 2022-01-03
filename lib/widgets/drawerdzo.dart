@@ -1,5 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:lgapplication/pages/all_dz_act.dart';
+import 'package:lgapplication/pages/all_dz_rule.dart';
+import 'package:page_transition/page_transition.dart';
+
+import '../pages/homepage.dart';
 
 class MyDrawerdzo extends StatelessWidget {
   @override
@@ -64,15 +69,181 @@ class MyDrawerdzo extends StatelessWidget {
                 ),
               ),
             ),
-            CustomListTile(Icons.home, 'གདོང་ཤོག།', () => {}),
-            CustomListTile(Icons.keyboard_arrow_right_outlined,
-                'འབྲུག་གི་ས་གནས་གཞུང་གི་བཅའ་ཁྲིམས།', () => {}),
-            CustomListTile(Icons.keyboard_arrow_right_outlined,
-                'ས་གནས་གཞུང་གི་བཅའ་ཡིག་དང་སྒྲིགས་གཞི།', () => {}),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20.0, 0, 10.0, 0),
+              child: InkWell(
+                splashColor: Colors.white,
+                onTap: () => Navigator.of(context).push(PageTransition(
+                  type: PageTransitionType.leftToRightWithFade,
+                  child: LoginPage(),
+                )),
+                child: Ink(
+                  height: 50,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Color(0xffec9015),
+                            ),
+                            child: Icon(
+                              Icons.home,
+                              color: Colors.white,
+                              size: 30,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
+                            child: Text(
+                              'གདོང་ཤོག།',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20.0, 0, 10.0, 0),
+              child: InkWell(
+                splashColor: Colors.white,
+                onTap: () => Navigator.of(context).push(PageTransition(
+                  type: PageTransitionType.fade,
+                  child: DzoactPage(),
+                )),
+                child: Ink(
+                  height: 50,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Color(0xffec9015),
+                            ),
+                            child: Icon(
+                              Icons.keyboard_arrow_right_outlined,
+                              color: Colors.white,
+                              size: 30,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
+                            child: Text(
+                              'འབྲུག་གི་ས་གནས་གཞུང་གི་བཅའ་ཁྲིམས།',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20.0, 0, 10.0, 0),
+              child: InkWell(
+                splashColor: Colors.white,
+                onTap: () => Navigator.of(context).push(PageTransition(
+                  type: PageTransitionType.fade,
+                  child: DzoactPage(),
+                )),
+                child: Ink(
+                  height: 50,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Color(0xffec9015),
+                            ),
+                            child: Icon(
+                              Icons.keyboard_arrow_right_outlined,
+                              color: Colors.white,
+                              size: 30,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
+                            child: Text(
+                              'ས་གནས་གཞུང་གི་བཅའ་ཡིག་དང་སྒྲིགས་གཞི།',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20.0, 0, 10.0, 0),
+              child: InkWell(
+                onTap: () => Navigator.of(context).push(PageTransition(
+                  type: PageTransitionType.fade,
+                  child: LoginPage(),
+                )),
+                child: Ink(
+                  height: 50,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Color(0xffec9015),
+                            ),
+                            child: Icon(
+                              Icons.keyboard_arrow_right_outlined,
+                              color: Colors.white,
+                              size: 30,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
+                            child: Text(
+                              "དཔེ་སྐྲུན།",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
             SizedBox(
               height: 20,
             ),
             InkWell(
+              onTap: () => Navigator.of(context).push(PageTransition(
+                type: PageTransitionType.rotate,
+                child: LoginPage(),
+              )),
               child: Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 70, vertical: 10),
@@ -93,60 +264,133 @@ class MyDrawerdzo extends StatelessWidget {
                 ),
               ),
             ),
-            CustomListTile(Icons.share, 'གཞན་ལུ་སླབ་ནི།', () => {}),
-            CustomListTile(Icons.question_answer, 'འབྲེལ་མཐུད།', () => {}),
-            CustomListTile(Icons.phone, 'འབྲེལ་བ་འཐབ་ས།', () => {}),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class CustomListTile extends StatelessWidget {
-  IconData icon;
-  String text;
-  Function onTap;
-  CustomListTile(this.icon, this.text, this.onTap);
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(20.0, 0, 10.0, 0),
-      child: InkWell(
-        splashColor: Colors.white,
-        onTap: () => {},
-        child: Container(
-          height: 50,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Row(
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Color(0xffec9015),
-                    ),
-                    child: Icon(
-                      icon,
-                      color: Colors.white,
-                      size: 32,
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
-                    child: Text(
-                      text,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 13,
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20.0, 0, 10.0, 0),
+              child: InkWell(
+                splashColor: Colors.white,
+                onTap: () => Navigator.of(context).push(PageTransition(
+                  type: PageTransitionType.fade,
+                  child: LoginPage(),
+                )),
+                child: Ink(
+                  height: 50,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Color(0xffec9015),
+                            ),
+                            child: Icon(
+                              Icons.share,
+                              color: Colors.white,
+                              size: 30,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
+                            child: Text(
+                              'གཞན་ལུ་སླབ་ནི།',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
-                    ),
+                    ],
                   ),
-                ],
+                ),
               ),
-            ],
-          ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20.0, 0, 10.0, 0),
+              child: InkWell(
+                splashColor: Colors.white,
+                onTap: () => Navigator.of(context).push(PageTransition(
+                  type: PageTransitionType.fade,
+                  child: LoginPage(),
+                )),
+                child: Ink(
+                  height: 50,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Color(0xffec9015),
+                            ),
+                            child: Icon(
+                              Icons.question_answer,
+                              color: Colors.white,
+                              size: 30,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
+                            child: Text(
+                              'འབྲེལ་མཐུད།',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20.0, 0, 10.0, 0),
+              child: InkWell(
+                splashColor: Colors.white,
+                onTap: () => Navigator.of(context).push(PageTransition(
+                  type: PageTransitionType.fade,
+                  child: LoginPage(),
+                )),
+                child: Ink(
+                  height: 50,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Color(0xffec9015),
+                            ),
+                            child: Icon(
+                              Icons.phone,
+                              color: Colors.white,
+                              size: 30,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
+                            child: Text(
+                              'འབྲེལ་བ་འཐབ་ས།',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );

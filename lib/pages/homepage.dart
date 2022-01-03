@@ -17,6 +17,8 @@ class _LoginPageState extends State<LoginPage> {
   bool changeButton = false;
   final _formkey = GlobalKey<FormState>();
 
+  get mailtoLink => null;
+
   moveToHome(BuildContext context) async {
     if (_formkey.currentState!.validate()) {
       setState(() {
@@ -233,68 +235,70 @@ void FaqPageModel(context) {
       context: context,
       builder: (BuildContext bc) {
         return new Scaffold(
-          body: new Column(
-            children: <Widget>[
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      'Feedback',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w900,
+          body: SingleChildScrollView(
+            child: new Column(
+              children: <Widget>[
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        'Feedback',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w900,
+                        ),
                       ),
                     ),
-                  ),
-                  Spacer(),
-                  IconButton(
-                      onPressed: () {
-                        Navigator.of(context).pop();
-                      },
-                      icon: Icon(Icons.cancel))
-                ],
-              ),
-              new ListTile(
-                leading: const Icon(Icons.email),
-                title: new TextField(
-                  decoration: new InputDecoration(
-                    hintText: "Email",
-                  ),
+                    Spacer(),
+                    IconButton(
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        },
+                        icon: Icon(Icons.cancel))
+                  ],
                 ),
-              ),
-              new ListTile(
-                leading: const Icon(Icons.question_answer),
-                title: new TextField(
-                  decoration: new InputDecoration(
-                    hintText: "Your Query here",
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 30,
-              ),
-              InkWell(
-                child: AnimatedContainer(
-                  duration: Duration(seconds: 1),
-                  width: 190,
-                  height: 50,
-                  alignment: Alignment.center,
-                  child: Text(
-                    "Send",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: 'Uchen' 'serif',
-                      fontWeight: FontWeight.bold,
-                      fontSize: 15,
+                new ListTile(
+                  leading: const Icon(Icons.email),
+                  title: new TextField(
+                    decoration: new InputDecoration(
+                      hintText: "Email",
                     ),
                   ),
-                  decoration: BoxDecoration(
-                      color: Color(0XFFd89f50),
-                      borderRadius: BorderRadius.circular(5)),
                 ),
-              ),
-            ],
+                new ListTile(
+                  leading: const Icon(Icons.question_answer),
+                  title: new TextField(
+                    decoration: new InputDecoration(
+                      hintText: "Your Query here",
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                InkWell(
+                  child: AnimatedContainer(
+                    duration: Duration(seconds: 1),
+                    width: 190,
+                    height: 50,
+                    alignment: Alignment.center,
+                    child: Text(
+                      "Send",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: 'Uchen' 'serif',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15,
+                      ),
+                    ),
+                    decoration: BoxDecoration(
+                        color: Color(0XFFd89f50),
+                        borderRadius: BorderRadius.circular(5)),
+                  ),
+                ),
+              ],
+            ),
           ),
         );
       });
@@ -405,10 +409,11 @@ _callNumber(String phoneNumber) async {
 }
 
 Future<void> _launchURL() async {
-  const url = 'https://wwwelvetas.org/en/bhutan';
+  const url = 'https://www.helvetas.org/en/bhutan';
   if (await canLaunch(url)) {
     await launch(url);
   } else {
     throw 'Could not launch $url';
   }
 }
+
